@@ -163,7 +163,7 @@ var Huc12TotalsTableView = Marionette.ItemView.extend({
         'mouseover @ui.rows': 'handleRowMouseOver',
         'mouseout @ui.rows': 'handleRowMouseOut',
     },
-    onAttach: function() {
+    onRender: function() {
         $('[data-toggle="table"]').bootstrapTable();
     },
     initialize: function() {
